@@ -2,6 +2,7 @@ import {useState} from 'react'
 import * as C from "./styles/App.styles"
 import {Item} from './types/Item'
 import { GlobalStyle } from './styles/global'
+import {ListItem} from './components/ListItem'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
 
         {list.map((item, index) => {
           return(
-            <div>{item.name}</div>
+            <ListItem key={index} item={item}></ListItem>
           )
         })}
 

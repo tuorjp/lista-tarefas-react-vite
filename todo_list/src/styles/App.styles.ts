@@ -1,9 +1,6 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background-color: #17181F;
     color: #797A81;
     min-height: 100vh;
@@ -12,7 +9,7 @@ export const Container = styled.div`
 export const Area = styled.div`
     margin: auto;
     padding: 10px;
-    min-width: 980px;
+    max-width: 980px;
 `
 
 export const Header = styled.h1`
