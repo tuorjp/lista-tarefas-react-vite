@@ -1,6 +1,7 @@
 import {useState} from 'react'
-import * as C from "./App.styles"
+import * as C from "./styles/App.styles"
 import {Item} from './types/Item'
+import { GlobalStyle } from './styles/global'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
   ])
 
   return(
+    <>
     <C.Container>
       <C.Area>
         <C.Header>Lista de Tarefas</C.Header>
@@ -25,6 +27,8 @@ function App() {
 
       </C.Area>
     </C.Container>
+    <GlobalStyle />
+    </>
   )
 }
 
